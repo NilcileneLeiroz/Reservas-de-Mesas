@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservas de Mesas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Reservas de Mesas</h1>
+        <form id="reservaForm">
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="text" id="telefone" placeholder="Telefone" required>
+            <input type="text" id="cidade" placeholder="Cidade" required>
+            <input type="number" id="pessoas" placeholder="Nº de pessoas" required>
+            <select id="area">
+                <option value="interna">Área Interna</option>
+                <option value="externa">Área Externa</option>
+            </select>
+            <button type="submit">Reservar</button>
+        </form>
+        <ul id="listaEspera"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
